@@ -1,0 +1,100 @@
+@import "../common/color";
+.media-library {
+    &__tabs {
+        .tab-content {
+            padding: 10px;
+            background-color: $lite_silver;
+            .tab-pane {
+                background-color: $white;
+            }
+            .my-files {
+                &__tab {
+                    .media-library-table {
+                        .thumbnail {
+                            img {
+                                width: 50px;
+                                height: 50px;
+                            }
+                        }
+                    }
+                    .grid-file-tile {
+                        .thumbnail {
+                            img {
+                                height: 200px;
+                            }
+                        }
+                    }
+                    .fixed-height-grid {
+                        padding: 0 10px;
+                        height: 540px;
+                        overflow-x: hidden;
+                        overflow-y: auto;
+                    }
+                    .grid-file-tile {
+                        .overlay {
+                            border-bottom-left-radius: 4px;
+                            border-bottom-right-radius: 4px;
+                            margin: auto;
+                            width: calc(100% - 30px);
+                            bottom: 0;
+                            position: absolute;
+                            left: 0;
+                            right: 0; // opacity: 0.8;
+                            background-color: $side_menu_blue_dark;
+                            height: 30%;
+                            transition: .5s ease;
+                            .info-block {
+                                display: inline-block;
+                                width: 75%;
+                                .custom-check-box {
+                                    width: 10%;
+                                    margin-right: 5%;
+                                }
+                                .info {
+                                    width: 85%
+                                }
+                            }
+                            .action-dd {
+                                .dropdown{
+                                    button.btn-default{
+                                        border: none;
+                                        background: transparent;
+                                        color:$white;
+                                    }
+                                }
+                                display: inline-grid;
+                                text-align: right;
+                                width: 25%
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        .nav-tabs {
+            padding: 0 10px;
+            >li {
+                a {
+                    color: #000;
+                    &:hover {
+                        background-color: transparent;
+                        border-color: transparent;
+                    }
+                }
+                &.active {
+                    a {
+                        border-top: 0;
+                        border-left: 0;
+                        border-right: 0;
+                        border-bottom: 5px solid #3fbfbb;
+                        color: #3fbfbb;
+                    }
+                }
+            }
+        }
+        .move-to-dropdown {
+            font-size: 12px;
+            padding: 4px 12px;
+        }
+    }
+}

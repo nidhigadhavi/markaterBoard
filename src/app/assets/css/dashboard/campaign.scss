@@ -1,0 +1,262 @@
+@import "../common/color";
+.campaign-details {
+    div{
+        div.btn-toolbar{
+            button.commercial-btn{
+                padding: 0px 10px;
+            }
+            button.export-btn{
+                padding: 0px 10px;
+            }
+        }
+    }
+    &__page {
+        .campaign-page-edit {
+            font-size: 18px;
+        } // .table-div {
+        //     padding: 10px;
+        // }
+        .campaign-details {
+            .refresh-button {
+                i {
+                    top: 0px;
+                    height: 13px;
+                }
+            }
+            .campaign-page-edit {
+                top: 0px;
+            }
+            .export-dropdown {
+                right: 0;
+            }
+            &__table {
+                margin: 0;
+                tr {
+                    td {
+                        border-bottom-color: transparent;
+                        &:first-child {
+                            border-left-color: transparent;
+                        }
+                        &:last-child {
+                            border-right-color: transparent;
+                        }
+                        &.commercial-button-td {
+                            padding: 5px 5px;
+                            button {
+                                padding: 2px;
+                            }
+                        }
+                    }
+                }
+                &-bottom {
+                    td {
+                        // width: 200px;
+                        div {
+                            &:first-child {
+                                font-weight: 700;
+                            }
+                        }
+                    }
+                }
+            }
+            &__channel-table {
+                &-tabs {
+                    .tab-content {
+                        padding: 0px 10px 10px 10px;
+                    }
+                    ul.nav-tabs {
+                        // border-bottom: 1px solid $dark_gray;
+                        background-color: $lite_silver;
+                        border: none;
+                        li {
+                            margin: 0;
+                            &:not(.active) {
+                                background-color: $lite_silver;
+                            }
+                            &.active {
+                                a {
+                                    background-color: $white;
+                                    border: none; // border-bottom-color: transparent;
+                                    border-radius: 0;
+                                    color: $button_active_background;
+                                    &:hover {
+                                        border-color: $dark_gray $dark_gray $white;
+                                    }
+                                }
+                            }
+                            a {
+                                color: $black;
+                                padding: 5px 10px;
+                                border: 0;
+                                background-color: $color_gallery;
+                            }
+                        }
+                    }
+                    .media-table {
+                        tbody {
+                            tr:not(:first-child) {
+                                td {
+                                    padding: 0 5px;
+                                    .form-control {
+                                        // height: 25px;
+                                        // line-height: 1;
+                                    }
+                                    .form-control-static {
+                                        min-height: inherit;
+                                        vertical-align: middle;
+                                        line-height: 20px;
+                                    }
+                                    select.form-control {
+                                        padding: 0px;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                    table {
+                        margin-bottom: 10px;
+                        td {
+                            line-height: 20px;
+                            padding: 10px;
+                            border-left: 1px solid $lite_gray;
+                            border-right: 1px solid $lite_gray;
+                            border-top: transparent;
+                            border-bottom: transparent;
+                            vertical-align: middle;
+                            &:first-child {
+                                border-left-color: transparent;
+                            }
+                            &:last-child {
+                                border-right-color: transparent;
+                            }
+                            .form-control {
+                                height: 20px;
+                                font-size: 12px;
+                                padding: 0px 5px;
+                            }
+                        }
+                        td,
+                        th {
+                            padding: 3px 5px;
+                        }
+                    }
+                    .media-plan-tab {
+                        .table-responsive {
+                            min-height: 300px;
+                            // height: 50vh;
+                            overflow-x: scroll;
+                        }
+                        .pagination-component {
+                            margin: 10px 0px 0px 0px;
+                            &>.active>a,
+                            &>.active>a:focus,
+                            &>.active>a:hover,
+                            &>.active>span,
+                            &>.active>span:focus,
+                            &>.active>span:hover {
+                                z-index: 2;
+                            }
+                        }
+                        .media-table {
+                            .head-row {
+                                th {
+                                    padding: 5px 10px;
+                                }
+                            }
+                            .sub-head-row {
+                                td {
+                                    line-height: 1.5;
+                                }
+                                &.background-color {
+                                    background-color: $color_star_dust_approx;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+            .commercial-button {
+                .btn {
+                    font-size: 14px;
+                    padding: 5px;
+                    font-weight: 100;
+                    line-height: 1;
+                    vertical-align: initial;
+                }
+            }
+        }
+    }
+    .campaign-info-collapse {
+        background-color: $lite_silver;
+        .arrow-button {
+            position: relative;
+            top: -10px;
+            border-radius: 10px;
+            border: solid 1px #777;
+            background-color: $white;
+            i {
+                padding: 3px;
+                color: #777;
+            }
+        }
+    }
+}
+
+.campaign-list {
+    &__page {
+        .pagination-component {
+            margin: 0px 20px 10px 0px;
+        }
+        .filter-fields {
+            .search-filter {
+                input {
+                    height: 26px;
+                    line-height: 27px;
+                    padding: 3px 25px 3px 10px;
+                }
+                .form-control-feedback {
+                    height: 29px;
+                    line-height: 29px;
+                }
+            }
+            .filter-apply {
+                padding: 3px 12px;
+            }
+        }
+        .campaign-list-table {
+            tbody {
+                tr {
+                    td {
+                        padding: 3px 10px;
+                        vertical-align: middle;
+                    }
+                }
+            }
+            thead {
+                tr {
+                    td {
+                        vertical-align: middle;
+                    }
+                }
+            }
+        }
+    }
+}
+
+.create-campaign {
+    &__page {
+        &--padding-all {
+            padding: 20px;
+        }
+    }
+}
+
+.toogleButton {
+    width: 52px;
+    margin: auto;
+}
+
+.pagination {
+    margin: 20px 20px 10px 0px;
+    float: right;
+}

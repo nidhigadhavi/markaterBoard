@@ -1,0 +1,326 @@
+@import "../common/color";
+.contact-module {
+    &__view-wrapper {
+        .contact {
+            &__view-wrapper {
+                .contact-list {
+                    &__page {
+                        &.popover.left {
+                            margin-left: 0px;
+                            .arrow {
+                                display: none;
+                            }
+                            .popover-content {
+                                padding: 5px 0px;
+                                li {
+                                    padding: 2px 10px;
+                                    &:active {
+                                        -webkit-box-shadow: none;
+                                        box-shadow: none;
+                                    }
+                                    &:hover {
+                                        background-color: #f5f5f5;
+                                        border-color: #f5f5f5;
+                                    }
+                                }
+                            }
+                        }
+                        .contact-list-table {
+                            &__section {
+                                .actions-drop-down {
+                                    .sub-menu {
+                                        border: none;
+                                        background-color: white;
+                                        box-shadow: none;
+                                        width: 100%;
+                                        text-align: -webkit-auto;
+                                        padding: 4px 19px;
+                                        margin: 0px;
+                                        border-radius: 0px;
+                                        &:active {
+                                            -webkit-box-shadow: none;
+                                            box-shadow: none;
+                                        }
+                                        &:hover {
+                                            background-color: #f5f5f5;
+                                            border-color: #f5f5f5;
+                                        }
+                                    }
+                                }
+                                .table {
+                                    thead{
+                                        tr{
+                                            th{
+                                                .checkbox{
+                                                    margin-top: 0px;
+                                                    margin-bottom: 0px;
+                                                }
+
+                                            }
+                                        }
+                                    }
+                                    tbody {
+                                        tr{
+                                        td {
+                                            div.checkbox{
+                                                margin: 0px;
+                                            }
+                                            padding: 2px 8px;
+                                            
+                                        }
+                                    }
+                                }
+                                }
+                                .top-section {
+                                    .form-group {
+                                        .form-control {
+                                            height: 28px;
+                                            padding: 2px 12px;
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+                .contact-create {
+                    &__page {
+                        .contact-create {
+                            &__form {
+                                &--right-part {
+                                    .textarea-label {
+                                        word-wrap: break-word;
+                                        overflow: auto;
+                                        height: 110px;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        .list-management {
+            &__view-wrapper {
+                .list-management {
+                    &__detail-page {
+                        .contact-table-block {
+                            .contact-list-table {
+                                tbody tr td {
+                                    padding: 3px 8px;
+                                    vertical-align: middle;
+                                }
+                                thead tr th {
+                                    vertical-align: middle;
+                                    border-bottom: none;
+                                    .checkbox{
+                                        margin: 0;
+                                    }
+                                }
+                            }
+                            .filter-actions {
+                                .btn.btn-default {
+                                    padding: 3px 10px;
+                                }
+                                .form-group .form-control {
+                                    height: 28px;
+                                    padding: 3px 10px;
+                                }
+                            }
+                        }
+                    }
+                    &__list-page {
+                        .list-management {
+                            &__table {
+                                thead>tr>th {
+                                    border: none;
+                                }
+                                tbody td {
+                                    padding: 3px 8px;
+                                    line-height: 1;
+                                    vertical-align: middle;
+                                }
+                                &-section {
+                                    .filters {
+                                        .form-group {
+                                            margin-right: 10px;
+                                            .form-control {
+                                                height: 28px;
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+.contact-list__page.popover.left {
+    margin-left: 0px;
+    .arrow {
+        display: none;
+    }
+    .popover-content {
+        padding: 5px 0px;
+        li {
+            padding: 2px 10px;
+            &:active {
+                -webkit-box-shadow: none;
+                box-shadow: none;
+            }
+            &:hover {
+                background-color: #f5f5f5;
+                border-color: #f5f5f5;
+            }
+        }
+    }
+}
+
+
+/************IMPORT CONTACT *********/
+
+.import-contact-page {
+    &__stages {
+        padding: 10px;
+        div.row {
+            padding-left: 15px;
+            background-color: #eee;
+            color: #fff;
+            border-bottom-left-radius: 20px;
+            border-bottom-right-radius: 20px;
+            border-top-left-radius: 20px;
+            border-top-right-radius: 20px;
+            >div:last-child {
+                border-bottom-right-radius: 20px;
+                border-top-right-radius: 20px;
+            }
+        }
+        .completed {
+            background-color: #eee;
+            .label {
+                color: #3fbfbb;
+            }
+            .icon {
+                color: #3fbfbb;
+                border: 5px solid #3fbfbb;
+            }
+        }
+        .active {
+            background-color: #3fbfbb;
+            .label {
+                color: #fff;
+            }
+            .icon {
+                color: #3fbfbb;
+                border: 5px solid #3fbfbb;
+            }
+        }
+        .label {
+            left: -15px;
+            position: relative;
+            color: #999;
+            font-weight: 800;
+            font-size: 14px;
+        }
+        .icon {
+            left: -15px;
+            color: #eee;
+            border-bottom-left-radius: 20px;
+            border-bottom-right-radius: 20px;
+            border-top-left-radius: 20px;
+            border-top-right-radius: 20px;
+            position: relative;
+            display: inline-block;
+            padding: 10px;
+            margin-bottom: -1px;
+            background-color: #fff;
+            border: 5px solid #eee;
+        }
+    }
+}
+
+// .background-light-green {
+//     background: #cef5e3;
+// }
+// .import-contact {
+//     .border-ligth-green {
+//         border: 1px solid #68f5ad;
+//         border-color: #6af1cb;
+//     }
+// }
+// .choose-file-margin-20 {
+//     margin-top: 20px;
+// }
+// .checkbox-margin-10 {
+//     margin-top: 10px;
+// }
+// .opt-info-color-gray {
+//     color: gray;
+// }
+// .btn-position-right {
+//     text-align: right;
+// }
+// .paragraph-content {
+//     margin-top: 20px;
+//     margin-left: 32px;
+//     font-size: 15px;
+// }
+// .header-margin-left-30 {
+//     margin-left: 30px;
+//     margin-top: 0;
+// }
+// .mapping-fields {
+//     margin-left: 29px;
+//     margin-top: 10px;
+// }
+// .phase {
+//     display: inline-block;
+//     width: 50%;
+//     font-size: 18px;
+//     border-bottom-left-radius: 30px;
+//     border-top-left-radius: 30px; // background-color: aqua;
+//     border-bottom-right-radius: 30px;
+//     border-top-right-radius: 30px;
+// }
+// .phase-1 {
+//     display: inline-block;
+//     width: 40px;
+//     border-radius: 20px;
+//     border: 5px solid;
+//     text-align: center;
+//     background-color: white;
+//     left: 0px;
+//     position: relative;
+//     border-color: #3fbfbb;
+// }
+// .phase-2 {
+//     display: inline-block;
+//     width: 40px;
+//     border-radius: 20px;
+//     border: 5px solid;
+//     text-align: center;
+//     background-color: white;
+//     left: 0px;
+//     position: relative;
+//     border-color: #e4eaea;
+// }
+// .main-phase {
+//     background: #e8e5e5;
+//     border-radius: 22px;
+// }
+.left {
+    &-minus {
+        &-28 {
+            left: -28px;
+        }
+    }
+}
+
+.activated {
+    background: #3fbfbb;
+    border-color: #3fbfbb
+}

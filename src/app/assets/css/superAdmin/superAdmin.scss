@@ -1,0 +1,16 @@
+.super-admin{
+    &__view-wrapper{
+        top: 52px;
+        width: 100%;
+        font-size: 14px;
+        table{
+            thead{
+                tr.sub-head-row {
+                    background-color: #ccc;
+                    color: #333;
+                }
+            }
+        }
+    }
+   
+}

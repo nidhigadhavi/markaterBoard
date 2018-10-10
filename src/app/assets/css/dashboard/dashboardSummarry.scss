@@ -1,0 +1,107 @@
+.dashboard-summary{
+    .well{
+        button.btn{
+            min-width: 55px;
+        }
+    }
+    .circular-arrow-button{
+    border: solid 1px;
+    width: 25px;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    padding: 5px;
+    margin: auto;
+    }
+    .sms-campaign{
+        .panel-default>.panel-heading{
+            font-size: 14px;
+            padding: 10px;
+            background-color: #de78de !important;
+        }
+    
+    }
+    .email-campaign{
+        .panel-default>.panel-heading{
+            font-size: 14px;
+            padding: 10px;
+            background-color: #ffa043 !important;
+        }
+    }
+
+    .total-contacts{
+        .panel-default>.panel-heading{
+            font-size: 14px;
+            padding: 10px;
+            background-color: #3fbfbb !important;
+        }
+    }
+
+    .action-link{
+        padding:0px;
+    }
+
+    .color-purpole{
+        color: #de78de;
+    }
+
+    .color-siyan{
+        color: #3fbfbb;
+    }
+
+    .color-orange{
+        color: #ffa043;
+    }
+    .color-gray{
+        color: #999;
+    }
+
+    .color-white{
+        color: white;
+    }
+
+    .font{
+        &-style-italic{
+            font-style: italic;
+        }
+    }
+
+    .background-green{
+        color: white;
+        background-color: #ffa043;
+    }
+    
+    .panel-section-one{
+        .row{
+            .panel{
+                .panel-body{
+                    padding: 15px 0px;
+                }
+            }
+        }
+    }
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    

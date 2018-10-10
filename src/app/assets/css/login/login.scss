@@ -1,0 +1,65 @@
+@import "../common/color";
+*{
+    padding: 0px;
+    margin: 0px;
+}
+.login {
+    &__content {
+        // height: calc(100vh - 50px); // height: 100%;
+        // background: $color_fun_blue;
+        // background: -webkit-radial-gradient($login_background_green, $color_fun_blue);
+        // background: -o-radial-gradient($login_background_green, $color_fun_blue);
+        // background: -moz-radial-gradient($login_background_green, $color_fun_blue);
+        // background: radial-gradient($login_background_green, $color_fun_blue);
+        &.registration-page {
+            padding: 5vh 0 0 0;
+        }
+        .thank-you-page {
+            // padding-top: 15%;
+            color: $white;
+        }
+        .white-background {
+            font-size: 45px;
+            background-color: $white;
+            color: #1e81a9;
+            padding: 3px 7px;
+            font-weight: 900;
+        }
+        .color-white {
+            color: $white;
+        }
+    }
+    &__navbar {
+        &.--padding-left {
+            padding-left: 20px;
+        }
+        &.--padding-right {
+            padding-right: 20px;
+        }
+        .navbar-right--padding-all {
+            padding: 15px;
+        }
+    }
+    &__form {
+        margin: auto;
+        float: none;
+        padding: 15% 0 0 0;
+        width: 30%;
+        form {
+            .input-icon {
+                padding-top: 3px;
+                padding-bottom: 3px;
+                color: $button_background;
+            }
+        }
+    }
+}
+
+.padding-none {
+    padding: 0;
+}
+
+.input-icon.input-group-addon {
+    background-color: $color_gallery;
+    border: 1px solid $lite_gray;
+}

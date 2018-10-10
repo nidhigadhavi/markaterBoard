@@ -1,0 +1,49 @@
+@import "./color";
+$full-width: 100%;
+$full-height: 100%;
+.app-loader {
+    position: fixed;
+    width: $full-width;
+    height: $full-height;
+    top: 0;
+    z-index: 2004;
+    &__overlay {
+        background-color: $black;
+        opacity: 0.7;
+        width: $full-width;
+        height: $full-height;
+    }
+    .loader {
+        width: 70px;
+        height: 70px;
+        position: absolute;
+        left: 0;
+        right: 0;
+        top: 0;
+        bottom: 0;
+        margin: auto;
+        text-align: center;
+        background-repeat: no-repeat;
+        background-size: contain;
+        border-radius: 10px;
+        border: 10px $black solid;
+        background-color: $black; // padding: 1em;
+        // margin: 0 auto 1em;
+        display: inline-block;
+        vertical-align: top;
+    }
+    /*
+  Set the color of the icon
+*/
+    .loader-svg {}
+    svg path,
+    svg rect {
+        fill: $button_background;
+    }
+    &--visible {
+        display: block;
+    }
+    &--hidden {
+        display: none;
+    }
+}

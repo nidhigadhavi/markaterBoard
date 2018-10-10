@@ -1,0 +1,80 @@
+.user-management__page{
+    .button-primary{
+        margin-top: 0px;
+    }
+}
+.invite-user-popup{
+    .user-premision-tabs{
+       .checkbox-inline{
+           input{
+               margin-top: 1px;
+           }
+       }
+    }
+    .modal-dialog {
+        
+        width: 600px;
+         .modal-content {
+             border-radius: 10px;
+            .modal-header{
+                padding: 15px 30px;
+                background-color: #e1e6ef;
+                color: #333;
+                border-top-left-radius: 10px;
+                border-top-right-radius: 10px;
+         .modal-title{
+            text-align: left;
+            font-weight: 700;
+         }
+        }
+      
+            .modal-body{
+                .grey-text{
+                    margin-top: 0px!important;
+                }
+              .margin-bottom-10{
+                  margin-bottom: 10px !important;
+              }
+             
+                .margin-top-5{
+                    margin-top: 5px;
+                }
+                padding: 20px 30px 30px 30px;
+                .grey-text{
+                    margin-top: 0px;
+                    margin-bottom: 20px;
+                    font-size: 13px;
+                    line-height: 1.5;
+                    // color: #777;
+                }
+                
+                .nav-tabs>li>a:hover{
+                    border-color: transparent;
+                    background-color: transparent;
+                }
+                .nav-tabs>li.active>a{
+                    border: none;
+                    background-color: transparent;
+                    color:#333;
+                    font-weight: bold;
+                    border-bottom:2px solid #3fbfbb;
+                }
+                .nav-tabs>li>a{
+                    color: #777;
+                    padding: 10px 3px;
+                    margin-right: 10px;
+                    // margin: 5px 8px 15px 0px;
+                }
+                .tab-content{
+                    padding-top: 20px;
+                }
+                .button-primary{
+                    margin-top: 15px;
+                }
+                .btn-link{
+                    margin-top: 15px;
+                }
+            }
+        }
+    }
+}

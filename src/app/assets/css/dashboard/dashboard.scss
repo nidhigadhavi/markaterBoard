@@ -1,0 +1,195 @@
+@import "../common/color";
+@import "./campaign";
+@import "./commercial";
+@import "./digitalMarketing";
+@import "./header";
+@import "./sidebar";
+.dashboard {
+    &__view-wrapper {
+        min-height: calc(100% - 52px);
+        background-color: $lite_silver; // top: 52px;
+        font-size: 12px;
+        padding: 0;
+        -webkit-transition: width 1s, left 1s, -webkit-transform 1s;
+        transition: width 1s, left 1s, transform 1s;
+        .margin-top {
+            margin-top: 10px;
+        }
+        .padding-all {
+            padding: 10px;
+        }
+        >.row {
+            &--no-margin {
+                margin: 0;
+            }
+        }
+        .my-profile {
+            &__page {
+                background-color: $white;
+                height: calc(100vh - 52px);
+                .alert-toast {
+                    left: 10vw;
+                }
+                .padding-all {
+                    padding: 20px;
+                }
+            }
+        }
+        .rest-password {
+            &__page {
+                background-color: $white;
+                height: calc(100vh - 52px);
+                .font-13{
+                    font-size: 13px;
+                }
+                .button-primary{
+                    margin-top: 15px;
+                }
+                .btn-link{
+                    margin-top: 15px;
+                }
+            }
+        }
+        .plan {
+            &__view-wrapper {
+                margin-top: 25px;
+                &--background-padding {
+                    padding: 10px 10px; // background-color: #eee; // height: 100%;
+                    .breadcrumb--no-margin {
+                        margin: 0;
+                    }
+                }
+            }
+        }
+    }
+    &__content {
+        // height: 100%;
+        position: relative;
+        top: 52px;
+        background-color: $white;
+        color: $black;
+        margin: 0;
+        .shrinked {
+            &-sidebar {
+                width: 50px;
+            }
+            &-viewwrapper {
+                width: calc(100% - 230px);
+                left: 230px;
+                .breadcrumb {
+                    width: calc(100% - 230px);
+                }
+            }
+        }
+        .expanded {
+            &-sidebar {
+                width: 230px;
+            }
+            &-viewwrapper {
+                width: calc(100% - 50px);
+                left: 50px;
+                .breadcrumb {
+                    width: calc(100% - 50px);
+                }
+            }
+        }
+        hr {
+            // border-top: 2px solid $button_background;
+            border-top-width: 2px;
+        }
+    }
+}
+
+.padding-none {
+    padding: 0;
+}
+
+.modal-heading {
+    background-color: $side_menu_blue_lite;
+    color: $white;
+}
+
+.modal-body {
+    color: $black;
+}
+
+.import-btn-margin-right-10 {
+    margin-right: 17px;
+}
+
+.primary-title {
+    font-size: 25px;
+    font-weight: bold;
+}
+
+.left-right-padding-0 {
+    padding-left: 0;
+    padding-right: 0;
+}
+
+.sub-header-font-size-20-padding-20 {
+    padding: 20px;
+    font-size: 18px
+}
+
+.btns-margin-10 {
+    margin: 10px;
+}
+
+.add-and-new-btn-margin-rigth-10 {
+    margin-right: 10px;
+}
+
+.edit-btn-margin-right-24 {
+    margin-right: 24px;
+}
+
+.list-style-none {
+    list-style-type: none;
+}
+
+.text-color-black {
+    color: black;
+}
+
+
+/*****Action Btn ********/
+
+.contact-list {
+    &__action-dropdown-button {
+        &__dropdown-content {
+            display: none;
+            position: absolute;
+            right: 0;
+            background-color: #f9f9f9;
+            min-width: 160px;
+            z-index: 1;
+        }
+        &__dropdown-content a {
+            color: black;
+            padding: 12px 16px;
+            text-decoration: none;
+            display: block;
+        }
+        &__drop-down-sub-menu {
+            border: none;
+            background-color: white;
+            box-shadow: none;
+            width: 100%;
+            text-align: -webkit-auto;
+            padding: 4px 18px;
+            margin: 0px!important;
+            border-radius: 0px;
+        }
+        &__drop-down-sub-menu:hover {
+            background-color: #f5f5f5;
+            border-color: #f5f5f5;
+        }
+        &__drop-down-sub-menu:active {
+            -webkit-box-shadow: none;
+            box-shadow: none;
+        }
+    }
+}
+
+

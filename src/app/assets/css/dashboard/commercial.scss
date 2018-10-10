@@ -1,0 +1,16 @@
+@import "../common/color";
+.commercial {
+    &__taxFields {
+        &--background-gray {
+            background-color: $lite_silver;
+            color: $black;
+        }
+    }
+    &__page {
+        // height: calc(100% - 52px);
+        .background-blue {
+            background-color: $side_menu_blue_dark;
+            color: $white;
+        }
+    }
+}

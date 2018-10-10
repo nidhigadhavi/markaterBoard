@@ -1,0 +1,99 @@
+@import "../common/color";
+.dashboard__side-bar {
+    left: 0;
+    // top: 52px;
+    position: fixed;
+    z-index: 1001;
+    font-size: 16px;
+    padding: 0;
+    overflow-x: hidden;
+    overflow-y: scroll;
+    height: calc(100% - 52px);
+    background-color: $side_menu_blue_lite;
+    -webkit-transition: width 1s, left 1s, -webkit-transform 1s ease-out 1s;
+    transition: width 1s, left 1s, transform 1s ease-out 1s;
+    &::-webkit-scrollbar {
+        width: 0;
+        background-color: $lite_silver;
+        &-thumb {
+            background-color: $white;
+            border-radius: 30px;
+        }
+    }
+    .collapse-menu {
+        background-color: $side_menu_blue_dark;
+        border-left: solid 5px $button_background;
+    }
+    .menu-text-hidden {
+        visibility: hidden;
+        opacity: 0;
+        transition: visibility 0.2s, opacity 0.2s linear;
+    }
+    .menu-text-show {
+        visibility: visible;
+        opacity: 1;
+        transition: visibility 0.2s, opacity 0.3s linear;
+        transition-delay: 0.25s;
+    }
+    .parent-menu {
+        background-color: $side_menu_blue_lite;
+        cursor: pointer;
+    }
+    .nav {
+        .custom-glyphicon {
+            margin-right: 5px;
+        }
+        li {
+            &:hover {
+                background-color: $color_ironside_gray;
+            }
+            &:focus {
+                background-color: transparent;
+            }
+            >.parent-menu {
+                >.menu {
+                    i.glyphicon-menu-hamburger {
+                        margin: 5px;
+                    }
+                }
+            }
+            a {
+                color: $color_gallery;
+                &:hover {
+                    color: $white;
+                    background: none;
+                    i {
+                        color: $white;
+                    }
+                }
+                &:focus {
+                    color: $white;
+                    background: none;
+                    i {
+                        color: $white;
+                    }
+                }
+                i {
+                    color: $color_gallery;
+                    margin-right: 10px;
+                    &.right-icon {
+                        margin-left: 10px;
+                        margin-right: 0;
+                    }
+                }
+                &.active {
+                    color: $button_background!important;
+                    i {
+                        color: $button_background!important;
+                    }
+                }
+            }
+        }
+        .collapse-menu i {
+            color: $color_regent_gray;
+        }
+    }
+    .nav--padded li {
+        padding-left: 20px;
+    }
+}
